@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Emik Auto Spares</title>
+  <meta name="description" content="">
+  <meta name="Emik Auto Spares" content="Homepage for Emik Auto Spares">
+
+  <!-- Favicons -->
+  <link href="assets/img/emik-favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Link to Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+<!-- Link to Leaflet JS (placed before closing </body>) -->
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: black;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img class="logo-img" 
+            src="assets/img/emik-logo-large.webp"
+            srcset="assets/img/emik-logo.webp 1x,
+                    assets/img/emik-logo-medium.webp 2x,
+                    assets/img/emik-logo-large.webp 3x"
+            alt="All Auto Spares Under One Roof" />
+
+        <h1 class="sitename">Emik Auto Spares</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>All Your Automotive Spares In One Place</h1>
+            <p>We are team of dedicated people dedicated to find you any automotive spares you may need.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/emik-accessories.webp" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <!--<div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
+          </div>
+        </div>-->
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Us</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Emik Auto Spares is your trusted source for quality second-hand vehicle parts in Johannesburg, South Africa. We specialize in providing affordable, reliable, and thoroughly tested auto spares for a wide range of makes and models.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Wide selection of used parts for passenger and commercial vehicles.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>All parts are inspected and guaranteed for quality and performance.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Experienced team ready to help you find exactly what you need.</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          Whether you're a workshop, a panel beater, or a private vehicle owner, we are here to help you save money without compromising on quality. Located in the heart of Johannesburg South, our yard is stocked with thousands of pre-owned spares that meet OEM standards. We are committed to helping you get back on the road — quickly and affordably.
+        </p>
+        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+
+    <!-- Skills Section -->
+<section id="skills" class="skills section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="assets/img/illustration/emik-cars.webp" class="img-fluid" alt="Used Auto Parts Johannesburg">
+      </div>
+
+      <div class="col-lg-6 pt-4 pt-lg-0 content">
+        <h3>Our Expertise</h3>
+        <p class="fst-italic">
+          Our knowledgeable team brings years of hands-on experience in sourcing, inspecting, and supplying top-quality second-hand automotive parts.
+        </p>
+
+        <div class="skills-content skills-animation">
+
+          <div class="progress">
+            <span class="skill"><span>Engine & Gearbox Diagnostics</span> <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>Vehicle Brand Knowledge</span> <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>Part Identification & Sourcing</span> <i class="val">98%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>Customer Support & Service</span> <i class="val">92%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p>Reliable second-hand vehicle parts and professional support to keep your car running smoothly.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-tools icon"></i></div>
+          <h4><a href="#" class="stretched-link">Used Auto Parts</a></h4>
+          <p>High-quality second-hand spares for a wide range of car makes and models — tested and ready for installation.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-shop icon"></i></div>
+          <h4><a href="#" class="stretched-link">In-Store Collection</a></h4>
+          <p>All parts are available for collection from our Johannesburg location — bring your vehicle or send a courier of your choice.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-search icon"></i></div>
+          <h4><a href="#" class="stretched-link">Part Sourcing</a></h4>
+          <p>Can’t find what you need? We’ll help source specific parts through our trusted supplier network across the country.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-headset icon"></i></div>
+          <h4><a href="#" class="stretched-link">Expert Support</a></h4>
+          <p>Our knowledgeable staff are here to help — from identifying parts to providing fitting guidance and recommendations.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Work Process Section -->
+<section id="work-process" class="work-process section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>How We Work</h2>
+    <p>From sourcing to service, our streamlined process ensures quality, value, and customer satisfaction.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="steps-item">
+          <div class="steps-image">
+            <img src="assets/img/steps/work-1.webp" alt="Work 1" class="img-fluid" loading="lazy">
+          </div>
+          <div class="steps-content">
+            <div class="steps-number">01</div>
+            <h3>Vehicle Sourcing & Dismantling</h3>
+            <p>We carefully source accident-damaged or deregistered vehicles and dismantle them to salvage high-quality, reusable parts.</p>
+            <div class="steps-features">
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Thorough inspection</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>OEM-quality parts</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Environmentally responsible</span></div>
+            </div>
+          </div>
+        </div><!-- End Steps Item -->
+      </div>
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="steps-item">
+          <div class="steps-image">
+            <img src="assets/img/steps/work-2.webp" alt="Work 2" class="img-fluid" loading="lazy">
+          </div>
+          <div class="steps-content">
+            <div class="steps-number">02</div>
+            <h3>Part Testing & Inventory</h3>
+            <p>Every part is tested and catalogued for condition, compatibility, and stock availability before being added to our database.</p>
+            <div class="steps-features">
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Functionality tests</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Clean and organized storage</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Wide model compatibility</span></div>
+            </div>
+          </div>
+        </div><!-- End Steps Item -->
+      </div>
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="steps-item">
+          <div class="steps-image">
+            <img src="assets/img/steps/work-3.webp" alt="Work 3" class="img-fluid" loading="lazy">
+          </div>
+          <div class="steps-content">
+            <div class="steps-number">03</div>
+            <h3>Customer Service & Collection</h3>
+            <p>Our team helps customers find the exact part they need, which they can collect directly from our Johannesburg premises.</p>
+            <div class="steps-features">
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Expert assistance</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Same-day collection available</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle"></i><span>Support with fitting advice</span></div>
+            </div>
+          </div>
+        </div><!-- End Steps Item -->
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Work Process Section -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        
+
+
+
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
+
+   <!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Frequently Asked Questions</h2>
+  <p>Got questions about our auto spares? We’ve answered some of the most common ones below to help you find what you need quickly and easily. If you still have questions, feel free to contact us.</p>
+</div><!-- End Section Title -->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="faq-container">
+
+        <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+          <i class="faq-icon bi bi-question-circle"></i>
+          <h3>Where are you located?</h3>
+          <div class="faq-content">
+            <p>We’re based in Johannesburg, South Africa. Visit our shop to browse our wide selection of used auto spare parts. Exact address and directions are available on our Contact page.</p>
+          </div>
+          <i class="faq-toggle bi bi-chevron-right"></i>
+        </div><!-- End Faq item-->
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <i class="faq-icon bi bi-question-circle"></i>
+          <h3>Do you offer delivery or shipping services?</h3>
+          <div class="faq-content">
+            <p>No, we do not offer delivery or courier services at this time. All purchases must be collected in person from our Johannesburg location.</p>
+          </div>
+          <i class="faq-toggle bi bi-chevron-right"></i>
+        </div><!-- End Faq item-->
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+          <i class="faq-icon bi bi-question-circle"></i>
+          <h3>What types of parts do you sell?</h3>
+          <div class="faq-content">
+            <p>We stock a variety of used car parts including engines, gearboxes, suspensions, brake systems, electrical components, and body panels. All parts are tested before being sold.</p>
+          </div>
+          <i class="faq-toggle bi bi-chevron-right"></i>
+        </div><!-- End Faq item-->
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+          <i class="faq-icon bi bi-question-circle"></i>
+          <h3>Can I check availability before visiting?</h3>
+          <div class="faq-content">
+            <p>Yes, you can call us or send a message to check if we have a specific part in stock. Our team is happy to assist and save you time.</p>
+          </div>
+          <i class="faq-toggle bi bi-chevron-right"></i>
+        </div><!-- End Faq item-->
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+          <i class="faq-icon bi bi-question-circle"></i>
+          <h3>Are the parts guaranteed?</h3>
+          <div class="faq-content">
+            <p>While we carefully inspect all parts before sale, they are sold as-is. We do not offer warranties, but we ensure quality and transparency with every item.</p>
+          </div>
+          <i class="faq-toggle bi bi-chevron-right"></i>
+        </div><!-- End Faq item-->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <!-- Contact Section -->
+<section id="contact" class="contact section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for any questions or to check part availability. We're ready to help you find what you need.</p>
+    </div>
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-6">
+
+        <div class="info-box">
+          <i class="bi bi-geo-alt"></i>
+          <h3>Our Address</h3>
+          <p>Number 368 Jules Street, Malvern, Johannesburg, South Africa</p>
+        </div>
+
+        <div class="info-box mt-4">
+          <i class="bi bi-telephone"></i>
+          <h3>Call Us</h3>
+          <p>
+            +27 63 181 2234<br>
+            +27 82 671 9491<br>
+            +27 84 517 9156
+          </p>
+        </div>
+
+        <!-- Optional Email Box -->
+        <!--
+        <div class="info-box mt-4">
+          <i class="bi bi-envelope"></i>
+          <h3>Email Us</h3>
+          <p>example@email.com</p>
+        </div>
+        -->
+
+      </div>
+      <!-- Map Section -->
+        <div id="map" style="height: 400px; margin: 2rem 0;"></div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Emik Auto Spares</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>368 Jules Street, Malvern</p>
+            <p>Johannesburg, GP 2094</p>
+            <p class="mt-3"><strong>Phone:</strong><br>
+              <span>+27 63 181 2234</span><br>
+              <span>+27 82 671 9491</span><br>
+              <span>+27 84 517 9156</span>
+          </p>
+
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Used Auto Parts</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Part Sourcing</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">In-Store Collection</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Expert Advice & Support</a></li>
+        </ul>
+      </div>
+
+
+        <div class="col-lg-4 col-md-12">
+  <h4>Follow Us</h4>
+  <p>Stay connected with Emik Auto Spares for the latest updates, special offers, and automotive tips. Join our community on social media and never miss out!</p>
+  <div class="social-links d-flex">
+    <a href="https://x.com/bullsurus" target="_blank" rel="noopener"><i class="bi bi-twitter"></i></a>
+    <a href="https://web.facebook.com/marketplace/you/selling" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/blel.lian/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/blessingmpofu1" target="_blank" rel="noopener">
+  <i class="bi bi-linkedin"></i>
+</a>
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Emik Auto Spares</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bmpofu@byupathway.edu">Bee&Nhlanhlamade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+<script src="assets/js/map.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.logo-img {
+  height: 6.5em;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  max-height: none !important;
+  width: auto !important;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
