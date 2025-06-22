@@ -438,17 +438,54 @@
       <p>Get in touch with us for any questions or to check part availability. We're ready to help you find what you need.</p>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row gy-4 justify-content-center align-items-stretch">
 
-      <div class="col-lg-6">
+      <!-- Contact Form (LEFT side) -->
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
 
-        <div class="info-box">
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">Your Name</label>
+              <input type="text" name="name" id="name-field" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email-field" required>
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject-field" required>
+            </div>
+
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">Message</label>
+              <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info (RIGHT side) -->
+      <div class="col-lg-5 d-flex flex-column justify-content-start" style="gap: 1rem;">
+        <div class="info-box" style="margin-bottom: 0;">
           <i class="bi bi-geo-alt"></i>
           <h3>Our Address</h3>
           <p>Number 368 Jules Street, Malvern, Johannesburg, South Africa</p>
         </div>
 
-        <div class="info-box mt-4">
+        <div class="info-box" style="margin-top: 0;">
           <i class="bi bi-telephone"></i>
           <h3>Call Us</h3>
           <p>
@@ -457,17 +494,11 @@
             +27 84 517 9156
           </p>
         </div>
-
-        <!-- Optional Email Box -->
-        <!--
-        <div class="info-box mt-4">
-          <i class="bi bi-envelope"></i>
-          <h3>Email Us</h3>
-          <p>example@email.com</p>
-        </div>
-        -->
-
       </div>
+
+    </div>
+  </div>
+</section>
       <!-- Map Section -->
         <div id="map" style="height: 400px; margin: 2rem 0;"></div>
 
