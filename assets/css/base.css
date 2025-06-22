@@ -13,3 +13,20 @@
   background: url('../assets/img/hero-emik.webp') center center / cover no-repeat !important;
   color: black !important;
 }
+.contact .info-box {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.php-email-form {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.info-box {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
