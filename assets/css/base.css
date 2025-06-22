@@ -9,3 +9,7 @@
   height: 400px;
   width: 100%;
 }
+ main #hero {
+  background: url('../assets/img/hero-emik.webp') center center / cover no-repeat !important;
+  color: black !important;
+}

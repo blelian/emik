@@ -58,7 +58,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <a class="btn-getstarted" href="#about">About Us</a>
 
     </div>
   </header>
@@ -66,24 +66,32 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" style="position: relative; overflow: hidden;">
+  <!-- Your color overlay with opacity -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(59, 83, 128, 0.6), rgba(59, 83, 128, 0.6)),
+                url('../assets/img/hero-emik.webp') center center / cover no-repeat;
+    z-index: 0;">
+  </div>
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>All Your Automotive Spares In One Place</h1>
-            <p>We are team of dedicated people dedicated to find you any automotive spares you may need.</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/emik-accessories.webp" class="img-fluid animated" alt="">
-          </div>
+  <!-- Your content -->
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <h1 style="color: white;">All Your Automotive Spares In One Place</h1>
+        <p style="color: white;">We are team of dedicated people dedicated to find you any automotive spares you may need.</p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started">About Us</a>
         </div>
       </div>
-
-    </section>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/emik-accessories.webp" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
